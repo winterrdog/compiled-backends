@@ -1,0 +1,5 @@
+# ignore all object files recursively
+**/*.o
+
+# ignore all executables( *.e ) recursively
+**/*.e
