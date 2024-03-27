@@ -1,9 +1,11 @@
 CXX = g++
 CXXFLAGS = -Ofast -std=c++17 -Wall -I/usr/local/include/crow/
 
-SRCS = init.cc
+SRCS = $(wildcard *.cc)
 OBJS = $(SRCS:.cc=.o)
-TARGET = init.e
+
+# generate target name for each source file. target name ends with .e
+TARGET = $(SRCS:.cc=.e)
 
 .PHONY: all clean
 

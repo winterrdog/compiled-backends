@@ -2,7 +2,7 @@
 #include <crow/crow/app.h>
 #include <crow/crow/http_response.h>
 
-int main(void) {
+int _main(void) {
   // init app
   crow::SimpleApp app{};
 
