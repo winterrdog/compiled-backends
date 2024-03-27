@@ -9,12 +9,12 @@ int main(void) {
 
   // routes
   CROW_ROUTE(app, "/hi-json")
-  ([]() {
+  ([]() -> json {
     json res = {{"name", "data-is-mine"}, {"pi", 3.14}, {"cpp", true}};
     return res;
   });
   CROW_ROUTE(app, "/json-again")
-  ([]() {
+  ([]() -> json {
     json res = {
         {"name", "data-is-mine"},
         {"pi", 3.14},
